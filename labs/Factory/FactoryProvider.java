@@ -1,3 +1,5 @@
+package cecs277FactoryLab;
+
 /**
  * This creates an instance of the proper factory, based on the factory
  * type passed in.  If an invalid factory type is passed in, we just 

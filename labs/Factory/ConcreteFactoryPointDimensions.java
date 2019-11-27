@@ -1,3 +1,5 @@
+package cecs277FactoryLab;
+
 /**
  * This factory builds Geometric objects of the point/dimension family, 
  * that is, internally they manage their dimensions with a single point

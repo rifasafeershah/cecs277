@@ -23,8 +23,8 @@ public class Bid {
      * @param dollarAmount Dollar amount for the stock
      * @param type Transaction type fpr the stock
      */
-    public Bid(String stockType, int numofShares, double dollarAmount, TransactionType type) {
-        this.mStockType = stockType;
+    public Bid(Stock stockType, int numofShares, double dollarAmount, TransactionType type) {
+        this.mStockType = stockType.getSymbol();
         this.mNumofShares = numofShares;
         this.mDollarAmount = dollarAmount;
         this.mType = type;
@@ -36,6 +36,6 @@ public class Bid {
      */
     public String toString() {
         String typeFormat = this.mType.name().substring(0, 1) + this.mType.name().substring(1).toLowerCase() + "ing";
-        return "Symbol: " + this.mStockType + typeFormat + mNumofShares + " shares for the amount: $" + this.mDollarAmount;
+        return "Symbol: " + this.mStockType + " " + typeFormat + " " + mNumofShares + " shares for the amount: $" + this.mDollarAmount;
     }
 }

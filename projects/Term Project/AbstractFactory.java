@@ -1,9 +1,11 @@
+/**
+ * Observer class represents an observer watching over a subject.
+ * Homework Assignment: Term Project
+ * @author Michael Zaragoza and Rifa Safeer Shah
+ * 12/09/2019
+ */
 package TermProject;
-
 public abstract class AbstractFactory {
-    /**
-     *
-     */
-    //FIXME fix this
     public abstract Room getRoom (RoomType roomType);
-} // End of the AbstractFactory class
+
+} //End of the AbstractFactory class

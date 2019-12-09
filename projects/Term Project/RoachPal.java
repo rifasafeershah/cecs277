@@ -1,3 +1,9 @@
+/**
+ * RoachPal class that implements PaymentStrategy for the Strategy pattern.
+ * Homework Assignment: Term Project
+ * @author Michael Zaragoza and Rifa Safeer Shah
+ * 12/09/2019
+ */
 package cecs277termproject;
 
 public class RoachPal implements PaymentStrategy {
@@ -7,7 +13,7 @@ public class RoachPal implements PaymentStrategy {
     private String emailID;
 
     /**
-     * Creates a PayPal account.
+     * Creates a RoachPal account.
      * @param name The buyer's colony name
      * @param emailID The buyer's email.
      */
@@ -16,11 +22,14 @@ public class RoachPal implements PaymentStrategy {
         this.emailID = emailID;
     }
     /**
-     * Returns amount paid with buyer's info.
+     * Returns amount paid with buyer's info and logs it into a transaction file.
      * @param amount The amount paid.
+     * @param nights The amount of nights/days spent at the motel.
      */
     @Override
-    public void pay(double amount) {
-        System.out.println(this.name + " has paid $" + amount + " with RoachPal" );
+    public void pay(double amount, int nights) {
+        String transaction = this.name + " has paid $" + amount + " for " + nights + " night(s) with RoachPal using " + this.emailID;
+        TransactionLogger.getLogger().log(transaction);
+        System.out.println(transaction);
     }
 }

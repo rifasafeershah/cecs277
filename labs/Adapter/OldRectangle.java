@@ -1,3 +1,5 @@
+package cecs277labAdapter;
+
 public interface OldRectangle {
 	public double getArea();
 	public double getperimeter();

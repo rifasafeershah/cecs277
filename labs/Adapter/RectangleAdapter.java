@@ -1,3 +1,5 @@
+package cecs277labAdapter;
+
 public class RectangleAdapter implements OldRectangle{ 
 	private NewRectangle rect;
 	public RectangleAdapter(Point first, Point second, Point third, Point fourth)

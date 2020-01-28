@@ -1,3 +1,5 @@
+package cecs277labAdapter;
+
 public class NewRectangle {
 	private Point upperLeft;
 	/** The width of the rectangle */
@@ -46,4 +48,5 @@ public class NewRectangle {
 	public double getPerimeter () {
 		return 2*this.width + 2*this.length;
 	}
+	
 }

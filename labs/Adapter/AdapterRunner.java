@@ -1,3 +1,5 @@
+package cecs277labAdapter;
+
 public class AdapterRunner {
 	public static void main(String[] args) {
 		Point first = new Point(1,5);

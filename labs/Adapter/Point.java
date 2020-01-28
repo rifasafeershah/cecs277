@@ -1,3 +1,5 @@
+package cecs277labAdapter;
+
 public class Point {
 	/** x coordinate of the point. */ 
 	private double x;
